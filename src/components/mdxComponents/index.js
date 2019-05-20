@@ -2,7 +2,8 @@ import React from "react";
 import Heading from "../heading";
 import Code from "./code";
 import { P } from "./p";
-import { Button } from "rimble-ui";
+import { Table } from "./table";
+import { Button, Flex, Loader } from "rimble-ui";
 
 /* eslint-disable react/display-name */
 const mdxComponents = {
@@ -37,13 +38,13 @@ const mdxComponents = {
   },
   code: props => <Code is="block" {...props} />,
   p: P,
-  inlineCode: Code
+  inlineCode: Code,
+  table: props => <Table {...props} />
   // TODO add `a`
   // TODO add `img`
   // TODO add `blockquote`
   // TODO add `ul`
   // TODO add `li`
-  // TODO add `table`
 };
 
 export default mdxComponents;

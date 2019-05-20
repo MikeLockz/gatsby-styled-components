@@ -2,8 +2,6 @@
 title: Button
 ---
 
-import { Button, Loader, Box } from "rimble-ui";
-
 # Button documentation
 
 Use the Button component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends [Box](/api-reference/Box).
@@ -62,7 +60,9 @@ Minimal styling. Used for composing buttons with more complex styles.
 
 ```js is=react-live
 <div>
-  <Button size="small">Connect wallet</Button>
+  <Button size="small" mr={3}>
+    Connect wallet
+  </Button>
 
   <Button size="large">Connect wallet</Button>
 </div>
@@ -113,7 +113,7 @@ Use to indicate to the user that they need to do something before they can perfo
 Use to add visual reinforcement to an action. In most cases an icon should support button copy and not replace. Copy is less ambiguous than an icon.
 
 ```js is=react-live
-<div>
+<Flex alignItems={"center"}>
   <Button icon="Send" mr={3}>
     Send
   </Button>
@@ -123,7 +123,7 @@ Use to add visual reinforcement to an action. In most cases an icon should suppo
   </Button>
 
   <Button icon="MoreHoriz" icononly />
-</div>
+</Flex>
 ```
 
 ### Loading button

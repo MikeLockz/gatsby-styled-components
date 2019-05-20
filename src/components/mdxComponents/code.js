@@ -2,12 +2,12 @@ import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import codeTheme from "prism-react-renderer/themes/duotoneLight";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
-import { Button, Flash, Box, ThemeProvider } from "rimble-ui";
+import { Flex, Loader, Button, Flash, Box, ThemeProvider } from "rimble-ui";
 import ConnectionBanner from "@rimble/connection-banner";
 // import codeTheme from "../../../static/static/prism-ghcolors.css";
 import defaultTheme from "../../theme";
 
-const localScope = { Button, Flash, ConnectionBanner };
+const localScope = { Flex, Loader, Button, Flash, ConnectionBanner };
 
 const prismMap = {
   sh: "bash",
