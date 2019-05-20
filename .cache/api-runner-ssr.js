@@ -7,6 +7,12 @@ var plugins = [{
     },{
       plugin: require('/Users/work/development/gatsby-starter-styled-components/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/work/development/gatsby-starter-styled-components/node_modules/gatsby-mdx/gatsby-ssr'),
+      options: {"plugins":[],"defaultLayouts":{"default":"/Users/work/development/gatsby-starter-styled-components/src/templates/docs.js"},"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1035,"sizeByPixelDensity":true}}]},
+    },{
+      plugin: require('/Users/work/development/gatsby-starter-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

@@ -1,0 +1,97 @@
+---
+title: "Checkbox"
+---
+
+import { Checkbox } from 'rimble-ui'
+
+# Checkboxes
+
+Created: Apr 23, 2019 1:44 AM
+Design guidelines: Checkbox design guidelines
+Tags: UI components
+
+# Checkbox documentation
+
+Use the `Checkbox` component when users can choose 0 or more than 1 options from a list. `Checkbox` maps to a checkbox input and a label.
+
+*Want to understand best practices for using  `Checkbox`?* [Read the design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-form-checkboxes--design-guidelines)
+
+**Import component**
+
+    import { Checkbox } from 'rimble-ui';
+
+## Examples
+
+Different ways to use the `Checkbox` component
+
+### Default checkbox
+
+<Checkbox
+label="Checkbox default"
+required="true"
+/>
+
+    <Checkbox
+      label="Checkbox default"
+      required="true"
+    />
+
+### Checked checkbox
+
+<Checkbox
+checked
+label="Checkbox checked"
+required="true"
+/>
+
+    <Checkbox
+      checked
+      label="Checkbox checked"
+      required="true"
+    />
+
+### Disabled checkbox
+
+<Checkbox
+disabled
+label="Checkbox disabled"
+required="true"
+/>
+
+    <Checkbox
+      disabled
+      label="Checkbox disabled"
+      required="true"
+    />
+
+### Checked and disabled
+
+<Checkbox
+checked
+disabled
+label="Checkbox checked disabled"
+my={2}
+required="true"
+/>
+
+    <Checkbox
+      checked
+      disabled
+      label="Checkbox checked disabled"
+      my={2}
+      required="true"
+    />
+
+## Component props
+
+`Checkbox` will pass any props that are defined on its component and uses the following:
+
+[Untitled](https://www.notion.so/79d53de0f6cc410396549389839d5e8e)
+
+## Styled-system props
+
+`Checkbox` uses all the style props from `[Box](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation)`.
+
+---
+
+[Checkbox design guidelines](https://www.notion.so/c5885d2c772c4b5e9ac9883012d91a50)

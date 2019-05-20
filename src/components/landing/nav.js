@@ -1,17 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import {
-  color,
-  space,
-  width,
-  flex,
-  display
-} from 'styled-system'
+import { color, space, width, flex, display } from "styled-system";
 
-import Container from './Container'
-import NavMenu from './navMenu'
-import Heading from './Heading'
+import Container from "./Container";
+import NavMenu from "./navMenu";
+import Heading from "./Heading";
+import defaultTheme from "../../theme";
 
 const NavWrap = styled.nav`
   position: fixed;
@@ -27,7 +22,7 @@ const NavWrap = styled.nav`
 
   background: #FFFFFF;
   box-shadow: 0 2px 6px 0 rgba(0,0,0,0.10);
-`
+`;
 
 const NavList = styled.ul`
   & {
@@ -44,19 +39,21 @@ const NavList = styled.ul`
 
   ${display}
   ${flex}
-`
+`;
 
 const Nav = () => (
-  <NavWrap width={1} bg='white'>
+  <NavWrap width={1} bg="white">
     <Container>
-      <NavList display='flex' flex='row nowrap'>
+      <NavList display="flex" flex="row nowrap">
         <li>
-          <Heading.h1 fontSize={[1, 2]} fontWeight={1} color={'mid-grey'}>Rimble Design System</Heading.h1>
+          <Heading.h1 fontSize={[1, 2]} fontWeight={1} color={"mid-grey"}>
+            Rimble Design System
+          </Heading.h1>
         </li>
-        <NavMenu></NavMenu>
+        <NavMenu theme={defaultTheme} />
       </NavList>
     </Container>
   </NavWrap>
-)
+);
 
-export default Nav
+export default Nav;

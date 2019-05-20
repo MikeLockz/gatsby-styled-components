@@ -1,0 +1,57 @@
+---
+title: Flash
+---
+
+import { Flash } from 'rimble-ui';
+
+# Flash banner
+
+Created: Apr 23, 2019 1:45 AM
+Design guidelines: Flash design guidelines
+Tags: UI components
+
+# Flash documentation
+
+Use the `Flash` component for messages that persist but don't block the user. For example, you may want to let users know they're on the wrong network but allow them to continue browsing until they try to connect. The Flash renders a responsive box-model layout component. Inherits props from [Box](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation) component.
+
+*Want to understand best practices for using `Flash`*? [Read the design guidelines](#)
+
+**Import component**
+
+${`import { Flash } from 'rimble-ui';`}
+
+## Examples
+
+Different ways to use the `Flash` component
+
+### Default
+
+
+
+### Info
+
+### Success
+
+
+
+### Warning
+
+### Danger
+
+## Accessibility
+
+- Critical and warning banners have a role="alert"
+- All other banners have a role="status"
+- Banner containers have a tabindex="0" and display a visible keyboard focus indicator.
+- Banners use aria-describedby to describe their purpose to assistive technologies when they're announced or receive focus. All of the banner content is used for the aria-describedby.
+
+## Component props
+
+[Untitled](./-b20e9dc6-7549-46de-b460-5215adb2ff90.csv)
+
+## Styled-system props
+
+Flash uses all the style props from `[Box](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation)`.
+
+---
+

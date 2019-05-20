@@ -24,6 +24,8 @@ import Footer from "../components/landing/footer";
 import ReactSVG from "react-svg";
 import { borderRadius, boxShadow, backgroundImage } from "styled-system";
 
+import defaultTheme from "../theme";
+
 const Masthead = styled(Flex)`
   position: relative;
   min-height: calc(100vmax / 7 * 2.5);
@@ -61,7 +63,7 @@ class Example extends Component {
 `;
 
 const IndexPage = () => (
-  <ThemeProvider>
+  <ThemeProvider theme={defaultTheme}>
     <React.Fragment>
       <Typography />
 

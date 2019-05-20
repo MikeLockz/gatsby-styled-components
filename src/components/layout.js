@@ -1,37 +1,28 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import { GlobalStyle } from "./globalStyle"
-import { MainWrapper } from "./layoutComponents"
-import Header from "./header"
-import Footer from "./footer"
+import React from "react";
+// import ThemeProvider from "../components/landing/ThemeProvider";
+import defaultTheme from "../theme";
+// import { Navigation } from "../components/navigation";
+import Nav from "../components/landing/nav";
+import GatsbySidebar from "./gatsby-sidebar";
+import { Box, Flex, ThemeProvider } from "rimble-ui";
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <GlobalStyle />
-        <MainWrapper>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <main>{children}</main>
-          <Footer />
-        </MainWrapper>
-      </>
-    )}
-  />
-)
+const Layout = ({ children, location, itemList }) => (
+  <div>
+    <React.Fragment>
+      <Box height={4} padding={2} />
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+      <Nav />
+      <ThemeProvider theme={defaultTheme}>
+        <Flex>
+          <GatsbySidebar location={location} itemList={itemList} />
 
-export default Layout
+          <Box maxWidth={"960px"} margin={["auto"]}>
+            {children}
+          </Box>
+        </Flex>
+      </ThemeProvider>
+    </React.Fragment>
+  </div>
+);
+
+export default Layout;

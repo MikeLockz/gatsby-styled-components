@@ -1,0 +1,39 @@
+---
+title: Button
+---
+
+import { Button } from 'rimble-ui'
+
+# Button documentation
+
+Use the `Button` component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends `[Box](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation)`.
+
+*Want to understand best practices for using this component?* Read `[Button` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-buttons--design-guidelines)
+
+**Import component**
+
+```jsx
+import { Button } from 'rimble-ui';
+```
+
+## Examples
+
+Different ways to use the `Button` component
+
+### Default button
+
+Use to show users the primary action(s) they can take from the screen they're on.
+
+
+
+```js is=react-live
+<Button>
+  Connect wallet
+</Button>
+```
+
+
+### Outline button
+
+Use for secondary actions
+

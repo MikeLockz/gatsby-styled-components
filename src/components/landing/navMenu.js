@@ -6,6 +6,7 @@ import styled from "styled-components";
 import ReactSVG from "react-svg";
 import RimbleLink from "./RimbleLink";
 import Text from "./Text";
+import defaultTheme from "../../theme";
 
 const StyledWrap = styled.div`
   position: relative;
@@ -21,7 +22,7 @@ const StyledToggle = styled.div`
     }
   }
   svg {
-    fill: ${props => props.theme.colors.primary};
+    fill: ${props => defaultTheme.colors.primary};
     display: block;
     height: 2rem;
     width: 2.5rem;
