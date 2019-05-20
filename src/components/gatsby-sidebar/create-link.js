@@ -19,16 +19,14 @@ const createLink = ({
 
   return (
     <span>
-      <RimbleLink a="#">
-        <Link
-          onClick={onLinkClick}
-          to={item.link}
-          style={{ textDecoration: "none" }}
-        >
-          {stepsUI && <span />}
-          {title}
-        </Link>
-      </RimbleLink>
+      <Link
+        onClick={onLinkClick}
+        to={item.link}
+        style={{ textDecoration: "none" }}
+      >
+        {stepsUI && <span />}
+        {title}
+      </Link>
     </span>
   );
 };
