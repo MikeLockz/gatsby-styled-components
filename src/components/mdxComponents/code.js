@@ -1,11 +1,10 @@
 import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
-import codeTheme from "prism-react-renderer/themes/duotoneDark";
+import codeTheme from "prism-react-renderer/themes/duotoneLight";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
-import { Button, Flash } from "rimble-ui";
+import { Button, Flash, Box, ThemeProvider } from "rimble-ui";
 import ConnectionBanner from "@rimble/connection-banner";
 // import codeTheme from "../../../static/static/prism-ghcolors.css";
-import { ThemeProvider, Box } from "rimble-ui";
 import defaultTheme from "../../theme";
 
 const localScope = { Button, Flash, ConnectionBanner };
@@ -19,24 +18,34 @@ const Code = ({ is, children, lang = "markdown" }) => {
   if (!is) {
     console.log("!is", is);
     return (
-      <ThemeProvider theme={defaultTheme}>
-        <Highlight
-          {...defaultProps}
-          theme={codeTheme}
-          code={children.trim()}
-          language={lang}
-        >
-          {({ className, style, tokens, /*getLineProps,*/ getTokenProps }) => (
-            <code className={className} style={{ ...style, display: "inline" }}>
-              {tokens.map(line =>
-                line.map((token, key) => (
-                  <span key="fake-key" {...getTokenProps({ token, key })} />
-                ))
-              )}
-            </code>
-          )}
-        </Highlight>
-      </ThemeProvider>
+      <Box display={"inline-block"}>
+        <ThemeProvider theme={defaultTheme}>
+          <Highlight
+            {...defaultProps}
+            theme={codeTheme}
+            code={children.trim()}
+            language={lang}
+          >
+            {({
+              className,
+              style,
+              tokens,
+              /*getLineProps,*/ getTokenProps
+            }) => (
+              <code
+                className={className}
+                style={{ ...style, display: "inline" }}
+              >
+                {tokens.map(line =>
+                  line.map((token, key) => (
+                    <span key="fake-key" {...getTokenProps({ token, key })} />
+                  ))
+                )}
+              </code>
+            )}
+          </Highlight>
+        </ThemeProvider>
+      </Box>
     );
   }
 

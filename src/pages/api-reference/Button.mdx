@@ -2,38 +2,192 @@
 title: Button
 ---
 
-import { Button } from 'rimble-ui'
+import { Button, Loader, Box } from "rimble-ui";
 
 # Button documentation
 
-Use the `Button` component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends `[Box](https://consensys.github.io/rimble-ui/?path=/story/components-layout-box--documentation)`.
+Use the Button component when you want users to perform an action like connecting their Ethereum account or starting a transaction. It contains a label with an optional icon before or after the label. It maps to a `<button type='button'>` element and extends [Box](/api-reference/Box).
 
-*Want to understand best practices for using this component?* Read `[Button` design guidelines](https://consensys.github.io/rimble-ui/?path=/story/components-buttons--design-guidelines)
+*Want to understand best practices for using this component?* Read [Button design guidelines](/design-guidelines/Button)
 
-**Import component**
+Import component
 
 ```jsx
-import { Button } from 'rimble-ui';
+import { Button } from "rimble-ui";
 ```
 
-## Examples
+## Button examples
 
-Different ways to use the `Button` component
+Different ways to use the `Button` component.
+
+In special cases where you'd like to use a `<a>` styled like a `Button`, use `<Button as='a'></Button>` and provide an href.
 
 ### Default button
 
 Use to show users the primary action(s) they can take from the screen they're on.
 
+```js is=react-live
+<Button>Connect wallet</Button>
+```
 
+### Different styles
+
+#### Solid
+
+```js is=react-live
+<Button>Connect wallet</Button>
+```
+
+#### Outline
+
+```js is=react-live
+<Button.Outline>Connect wallet</Button.Outline>
+```
+
+#### Text
+
+```js is=react-live
+<Button.Text>Connect wallet</Button.Text>
+```
+
+### Base
+
+Minimal styling. Used for composing buttons with more complex styles.
+
+```js is=react-live
+<Button.Base>Connect wallet</Button.Base>
+```
+
+### Different sizes
+
+```js is=react-live
+<div>
+  <Button size="small">Connect wallet</Button>
+
+  <Button size="large">Connect wallet</Button>
+</div>
+```
+
+### Color variants
+
+Use 'success' and 'danger' color styles.
+
+#### Success
+
+```js is=react-live
+<Button variant="success">Success button</Button>
+```
+
+#### Danger
+
+```js is=react-live
+<Button variant="danger">Danger button</Button>
+```
+
+#### Custom color
+
+```js is=react-live
+<div>
+  <Button mainColor="DarkCyan" marginRight={3}>
+    Custom color button
+  </Button>
+
+  <Button.Outline mainColor="DarkCyan" marginRight={3}>
+    Custom color button
+  </Button.Outline>
+
+  <Button.Text mainColor="DarkCyan">Custom color button</Button.Text>
+</div>
+```
+
+### Disabled button
+
+Use to indicate to the user that they need to do something before they can perform the action.
+
+```js is=react-live
+<Button disabled>Connect wallet</Button>
+```
+
+### Icon
+
+Use to add visual reinforcement to an action. In most cases an icon should support button copy and not replace. Copy is less ambiguous than an icon.
+
+```js is=react-live
+<div>
+  <Button icon="Send" mr={3}>
+    Send
+  </Button>
+
+  <Button icon="Send" iconpos="right" mr={3}>
+    Send
+  </Button>
+
+  <Button icon="MoreHoriz" icononly />
+</div>
+```
+
+### Loading button
+
+Use to give users reassurance that the action they want is happening. If possible, include copy that further explains what's happening like "Loading" or "Sending"
 
 ```js is=react-live
 <Button>
-  Connect wallet
+  <Loader color="white" />
 </Button>
 ```
 
+### Link button
 
-### Outline button
+Use when you want a primary action to navigate the user to a new page or area. Use action words as the button label.
 
-Use for secondary actions
+_This also requires you to import the Link component from the rimble-ui library._
 
+**[Learn More](/design-guidelines/Button)**
+
+```js is=react-live
+<Button as="a" href="#!" target="\_blank" title="Learn more">
+  Learn More
+</Button>
+```
+
+Link Button Outline
+
+```js is=react-live
+<Button.Outline as="a" href="#!" target="\_blank" title="Learn more">
+  Learn More
+</Button.Outline>
+```
+
+### **Component props**
+
+Button's icon inherits all the props from [Icon](/api-reference/Icon), but also includes these:
+
+| Prop      | Type    | Values                                                           | Default | Description                                  |
+| --------- | ------- | ---------------------------------------------------------------- | ------- | -------------------------------------------- |
+| size      | string  | small, medium, large                                             | medium  | Sets button size to small, medium or large   |
+| fullWidth | boolean | true, false                                                      | true    | Sets button width to fullWidth               |
+| disabled  | boolean | true, false                                                      | true    | Sets button style to disabled                |
+| icon      | string  | [icon list](https://github.com/jxnblk/rmdi/blob/master/ICONS.md) | none    | Adds Icon to button                          |
+| iconPos   | string  | left, right                                                      | left    | Sets Icon position inside button             |
+| iconOnly  | boolean | true, false                                                      | true    | Sets Button dimensions for icon-only buttons |
+
+### **Styled-system props**
+
+`Button` uses all the style props from [Box](/api-reference/Box), but also includes these:
+
+| Prop         | CSS property                   | Function     | Theme field  |
+| ------------ | ------------------------------ | ------------ | ------------ |
+| position     | position                       | position     | none         |
+| color        | color                          | color        | colors       |
+| bg           | background-color               | bg           | none         |
+| height       | height                         | height       | heights      |
+| m            | margin                         | space        | space        |
+| px           | padding-right and padding-left | px           | space        |
+| py           | padding-top and padding-bottom | py           | space        |
+| border       | border-width                   | border       | borderWidths |
+| borderColor  | border-color                   | borderColor  | colors       |
+| borderRadius | border-radius                  | borderRadius | radii        |
+| boxShadow    | box-shadow                     | boxShadow    | shadows      |
+| fontSize     | font-size                      | fontSize     | fontSizes    |
+| fontFamily   | font-family                    | fontFamily   | fonts        |
+| fontWeight   | font-weight                    | fontWeight   | fontWeights  |

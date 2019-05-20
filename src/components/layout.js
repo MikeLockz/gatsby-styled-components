@@ -16,7 +16,7 @@ const Layout = ({ children, location, itemList }) => (
         <Flex>
           <GatsbySidebar location={location} itemList={itemList} />
 
-          <Box maxWidth={"960px"} margin={["auto"]}>
+          <Box maxWidth={"960px"} margin={["auto"]} padding={3}>
             {children}
           </Box>
         </Flex>
