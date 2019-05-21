@@ -55,6 +55,7 @@ export default {
     "near-white": "#f4f4f4",
     white: "#fff",
     transparent: "transparent",
+    "primary-light": "#F2F4F7",
     blacks: [
       "rgba(0,0,0,.0125)",
       "rgba(0,0,0,.025)",

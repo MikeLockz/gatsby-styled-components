@@ -9,8 +9,8 @@ import styled from "styled-components";
 const StyledPre = styled.pre`
   & {
     background: ${props => props.theme.colors.white};
-    border-radius: ${props => props.theme.radii[0]};
-    box-shadow: ${props => props.theme.shadows[0]};
+    border-radius: ${props => props.theme.radii[1]};
+    box-shadow: ${props => props.theme.shadows[1]};
   }
 
   &[class*="language-"] {

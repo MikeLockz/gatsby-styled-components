@@ -1,11 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
-
-import Layout from "../components/layout";
-import Image from "../components/image";
-// import { Container } from "../components/layoutComponents";
-import SEO from "../components/seo";
-
 // Import from old landing page
 import styled from "styled-components";
 import RimbleLink from "../components/landing/RimbleLink";
@@ -17,12 +10,11 @@ import Heading from "../components/landing/Heading";
 import Text from "../components/landing/Text";
 import Hr from "../components/landing/Hr";
 import { Flex, Box } from "../components/landing/Box";
-import Head from "../components/landing/head";
 import Nav from "../components/landing/nav";
 import Header from "../components/landing/header";
 import Footer from "../components/landing/footer";
 import ReactSVG from "react-svg";
-import { borderRadius, boxShadow, backgroundImage } from "styled-system";
+import { backgroundImage } from "styled-system";
 
 import defaultTheme from "../theme";
 
