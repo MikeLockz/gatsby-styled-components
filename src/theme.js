@@ -14,7 +14,8 @@ export default {
   },
   fonts: {
     serif: "athelas, georgia, times, serif",
-    sansSerif: '"Source Sans Pro", -apple-system, sans-serif'
+    sansSerif:
+      '"Inter UI", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif'
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256],
   radii: ["0", "4px", "8px", "16px"],
