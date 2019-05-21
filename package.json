@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-styled-components",
+  "name": "rimble-storefront",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and styled-components",
-  "version": "0.1.0",
-  "author": "Blake Noll <nollblake@gmail.com>",
+  "description": "Rimble UI landing page, design guidelines, rimble-ui and rimble-web3-component documentation.",
+  "version": "0.0.1",
+  "author": "ConsenSys Design",
   "dependencies": {
     "@mdx-js/mdx": "^1.0.19",
     "@mdx-js/react": "^1.0.16",
@@ -41,7 +41,10 @@
     "styled-system": "^4.2.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "rimble",
+    "consensys",
+    "web3"
   ],
   "license": "MIT",
   "scripts": {
@@ -54,9 +57,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/blakenoll/gatsby-starter-styled-components"
+    "url": "https://github.com/consensys/rimble-storefront"
   },
   "bugs": {
-    "url": "https://github.com/blakenoll/gatsby-starter-styled-components/issues"
+    "url": "https://github.com/consensys/rimble-storefront/issues"
   }
 }

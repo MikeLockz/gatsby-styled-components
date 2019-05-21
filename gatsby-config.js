@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter w/ styled-componets`,
-    description: `Gatsby starter using styled-components`,
-    author: `@blakenoll`,
+    title: `Rimble - Better dApp UX`,
+    description: `Rimble provides resources and tools for faster dApp development with better UX`,
+    author: `@consensysdesign`,
     docsLocation: `https://github.com/ConsenSys/rimble-ui/issues`
   },
   plugins: [
