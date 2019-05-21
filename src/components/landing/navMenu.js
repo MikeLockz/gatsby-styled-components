@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 //import { Layout, Link } from "$components";
-import { Link } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
 
 import ReactSVG from "react-svg";
 import RimbleLink from "./RimbleLink";
 import Text from "./Text";
 import defaultTheme from "../../theme";
+import Link from "./Link";
+import RimbleGatsbyLink from "./RimbleGatsbyLink";
 
 const StyledWrap = styled.div`
   position: relative;
@@ -107,16 +109,22 @@ class Menu extends Component {
               </Text>
             </li>
             <li>
-              <a
+              <Link
                 href="//github.com/ConsenSys/rimble-ui"
                 target="_blank"
                 rel="noopener"
               >
                 Github
-              </a>
+              </Link>
             </li>
             <li>
-              <Link to="/api-reference">Documentation</Link>
+              {/* <GatsbyLink to="/api-reference">Documentation</GatsbyLink> */}
+              <RimbleGatsbyLink
+                to="/api-reference"
+                title="Rimble Documentation"
+              >
+                Documentation
+              </RimbleGatsbyLink>
             </li>
           </ul>
         </StyledList>

@@ -3,26 +3,27 @@ import React from "react";
 import defaultTheme from "../theme";
 // import { Navigation } from "../components/navigation";
 import Nav from "../components/landing/nav";
+import Typography from "../components/landing/typography";
 import GatsbySidebar from "./gatsby-sidebar";
 import { Box, Flex, ThemeProvider } from "rimble-ui";
 
 const Layout = ({ children, location, itemList }) => (
-  <div>
+  <ThemeProvider theme={defaultTheme}>
     <React.Fragment>
-      <Box height={4} padding={2} />
+      <Box height={4} />
 
+      <Typography />
       <Nav />
-      <ThemeProvider theme={defaultTheme}>
-        <Flex>
-          <GatsbySidebar location={location} itemList={itemList} />
 
-          <Box maxWidth={"960px"} margin={["auto"]} padding={3}>
-            {children}
-          </Box>
-        </Flex>
-      </ThemeProvider>
+      <Flex>
+        <GatsbySidebar location={location} itemList={itemList} />
+
+        <Box maxWidth={"960px"} margin={["auto"]} padding={3}>
+          {children}
+        </Box>
+      </Flex>
     </React.Fragment>
-  </div>
+  </ThemeProvider>
 );
 
 export default Layout;
