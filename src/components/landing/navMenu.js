@@ -118,12 +118,13 @@ class Menu extends Component {
               </Link>
             </li>
             <li>
-              {/* <GatsbyLink to="/api-reference">Documentation</GatsbyLink> */}
-              <RimbleGatsbyLink
-                to="/api-reference"
-                title="Rimble Documentation"
-              >
-                Documentation
+              <RimbleGatsbyLink to="design" title="Rimble Documentation">
+                Design
+              </RimbleGatsbyLink>
+            </li>
+            <li>
+              <RimbleGatsbyLink to="develop" title="Rimble Documentation">
+                Develop
               </RimbleGatsbyLink>
             </li>
           </ul>

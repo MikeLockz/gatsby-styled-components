@@ -15,14 +15,14 @@ const Header = ({}) => (
       Adaptable components and design standards for decentralized applications.
     </Text.p>
 
-    <Link to={"getting-started"}>
+    <Link to={"design"}>
       <Button width={["100%", "auto"]} mr={[0, 3]} mb={[3, 0]}>
-        Get Started
+        Design
       </Button>
     </Link>
 
-    <Link to={"api-reference"}>
-      <Button.outline width={["100%", "auto"]}>Documentation</Button.outline>
+    <Link to={"develop"}>
+      <Button.outline width={["100%", "auto"]}>Develop</Button.outline>
     </Link>
   </header>
 );
