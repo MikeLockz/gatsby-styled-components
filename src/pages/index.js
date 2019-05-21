@@ -71,9 +71,9 @@ const IndexPage = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
+              <Heading.h1 fontSize={[4, 5]}>Why Rimble?</Heading.h1>
               <Hr />
-              <Text.p fontSize={[1, 2]}>
+              <Text.p fontSize={[2, 3]}>
                 Decentralized applications (dApps) require users to learn new
                 patterns and they present new hurdles for designers and
                 front-end developers. Rimble is here to make life easier for
@@ -87,7 +87,7 @@ const IndexPage = () => (
                   <Flex my={3}>
                     <ReactSVG src="/static/svg/fig-1.svg" />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>
+                  <Heading.h2 fontSize={[3, 4]} fontWeight={2}>
                     Flexible
                   </Heading.h2>
                   <Text.p>
@@ -99,7 +99,7 @@ const IndexPage = () => (
                   <Flex my={3}>
                     <ReactSVG src="/static/svg/fig-2.svg" />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>
+                  <Heading.h2 fontSize={[3, 4]} fontWeight={2}>
                     Research-driven
                   </Heading.h2>
                   <Text.p>
@@ -112,7 +112,7 @@ const IndexPage = () => (
                   <Flex my={3}>
                     <ReactSVG src="/static/svg/fig-3.svg" />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>
+                  <Heading.h2 fontSize={[3, 4]} fontWeight={2}>
                     Human
                   </Heading.h2>
                   <Text.p>
@@ -128,17 +128,17 @@ const IndexPage = () => (
           <Container>
             <Box my={5}>
               {/* body section */}
-              <Heading.h1 id="getting-started" fontSize={[3, 4]}>
+              <Heading.h1 id="getting-started" fontSize={[4, 5]}>
                 Getting Started
               </Heading.h1>
               <Hr />
-              <Heading.h2 fontSize={2} fontWeight={1}>
+              <Heading.h2 fontSize={3} fontWeight={2}>
                 Installation
               </Heading.h2>
               <CodeBlock
                 code={"$ npm install --save rimble-ui styled-components"}
               />
-              <Heading.h2 fontSize={2} fontWeight={1}>
+              <Heading.h2 fontSize={3} fontWeight={2}>
                 Usage
               </Heading.h2>
               <CodeBlock code={exampleCode} />
@@ -148,7 +148,7 @@ const IndexPage = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>
+              <Heading.h1 fontSize={[4, 5]}>
                 Made by ConsenSys Design
               </Heading.h1>
               <Hr />

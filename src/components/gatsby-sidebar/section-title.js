@@ -1,7 +1,5 @@
 import React from "react";
 
-const paddingLeft = level => (level === 0 ? level + 1 * 40 : level + 1 * 20);
-
 const TitleButton = ({
   isActive,
   isExpanded,

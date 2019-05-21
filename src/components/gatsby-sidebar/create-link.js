@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import presets from "./presets";
-import { Link as RimbleLink } from "rimble-ui";
 
 const _getTitle = (title, isDraft) => (isDraft ? title.slice(0, -1) : title);
 const _isDraft = title => title.slice(-1) === `*`;

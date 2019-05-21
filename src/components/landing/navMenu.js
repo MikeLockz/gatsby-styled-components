@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-//import { Layout, Link } from "$components";
-import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
-
 import ReactSVG from "react-svg";
-import RimbleLink from "./RimbleLink";
 import Text from "./Text";
 import defaultTheme from "../../theme";
 import Link from "./Link";
@@ -104,7 +100,7 @@ class Menu extends Component {
         <StyledList hidden={!this.state.isOpen}>
           <ul>
             <li>
-              <Text fontSize={1} fontWeight={1} color={"mid-grey"}>
+              <Text fontSize={2} fontWeight={2} color={"mid-grey"}>
                 v0.7.1
               </Text>
             </li>

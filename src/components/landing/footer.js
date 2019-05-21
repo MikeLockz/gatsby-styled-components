@@ -21,7 +21,7 @@ const MyContainer = styled(Container)`
   ${flexDirection}
 `;
 
-const Footer = ({}) => (
+const Footer = ({ props }) => (
   <FooterStyled>
     <MyContainer flexDirection={["column", "row"]} py={4}>
       <RimbleLink

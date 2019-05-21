@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 
 import Sidebar from "./sidebar";
-import presets from "./presets";
 import ScrollSyncSidebar from "./scroll-sync-sidebar";
-import ChevronSvg from "./chevron-svg";
 import ScrollPositionProvider, {
   ScrollPositionConsumer
 } from "./scrollbar-position-provider";
-import { Box } from "rimble-ui";
 
 class StickyResponsiveSidebar extends Component {
   constructor(props) {
@@ -25,16 +22,11 @@ class StickyResponsiveSidebar extends Component {
   };
 
   render() {
-    const { open } = this.state;
     const {
       enableScrollSync,
       location: { pathname }
     } = this.props;
     const SidebarComponent = enableScrollSync ? ScrollSyncSidebar : Sidebar;
-
-    const iconOffset = open ? 5 : -5;
-    const menuOpacity = open ? 1 : 0;
-    const menuOffset = open ? 0 : 40; //rhythm(10);
 
     const sidebarType = pathname.split(`/`)[1];
 

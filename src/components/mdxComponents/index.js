@@ -3,7 +3,6 @@ import Heading from "../heading";
 import Code from "./code";
 import { P } from "./p";
 import { Table } from "./table";
-import { Button, Flex, Loader } from "rimble-ui";
 
 /* eslint-disable react/display-name */
 const mdxComponents = {

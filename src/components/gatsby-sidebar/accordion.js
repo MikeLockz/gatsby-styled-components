@@ -3,8 +3,6 @@ import React, { Fragment } from "react";
 import Item from "./item";
 import { Title, TitleButton, SplitButton } from "./section-title";
 
-const paddingLeft = level => (level === 0 ? level + 1 * 40 : level + 1 * 20);
-
 const ItemWithSubitems = ({
   activeItemLink,
   createLink,

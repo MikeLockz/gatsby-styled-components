@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 
 import Item from "./item";
-import ExpandAllButton from "./button-expand-all";
 import getActiveItem from "./get-active-item";
 import getActiveItemParents from "./get-active-item-parents";
-import presets from "./presets";
 
 // Access to global `localStorage` property must be guarded as it
 // fails under iOS private session mode.

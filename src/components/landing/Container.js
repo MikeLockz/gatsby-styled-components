@@ -1,5 +1,4 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Container = styled.div`
   position: relative;
@@ -8,6 +7,6 @@ const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
-`
+`;
 
-export default Container
+export default Container;

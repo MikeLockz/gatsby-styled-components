@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Text from "./Text";
 
 // body size + 6 headings

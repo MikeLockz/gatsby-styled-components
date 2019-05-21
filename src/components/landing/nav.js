@@ -46,7 +46,7 @@ const Nav = () => (
     <Container>
       <NavList display="flex" flex="row nowrap">
         <li>
-          <Heading.h1 fontSize={[1, 2]} fontWeight={1} color={"mid-grey"}>
+          <Heading.h1 fontSize={[2, 3]} fontWeight={2} color={"mid-gray"}>
             Rimble Design System
           </Heading.h1>
         </li>

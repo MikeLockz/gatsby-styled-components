@@ -1,9 +1,6 @@
 import React, { PureComponent } from "react";
-
 import Highlight, { defaultProps } from "prism-react-renderer";
-// import style from "../../static/prism-ghcolors.css";
-import style from "../../../static/static/prism-ghcolors.css";
-
+import "../../../static/static/prism-ghcolors.css";
 import styled from "styled-components";
 
 const StyledPre = styled.pre`

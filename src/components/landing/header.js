@@ -6,12 +6,12 @@ import Text from "./Text";
 import Heading from "./Heading";
 import Button from "./Button";
 
-const Header = ({}) => (
+const Header = ({ props }) => (
   <header>
     <Heading.h1 fontSize={[5, 7]} pr={[3, 6]}>
       Rimble Design System
     </Heading.h1>
-    <Text.p fontSize={2} mt={3} mb={5} pr={[3, 6]}>
+    <Text.p fontSize={3} mt={3} mb={5} pr={[3, 6]}>
       Adaptable components and design standards for decentralized applications.
     </Text.p>
 
