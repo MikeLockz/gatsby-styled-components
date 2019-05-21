@@ -15,6 +15,10 @@
           "options": {}
         },
         {
+          "name": "@babel/plugin-proposal-export-default-from",
+          "options": {}
+        },
+        {
           "name": "@babel/plugin-proposal-do-expressions",
           "options": {}
         }
@@ -29,6 +33,10 @@
       "plugins": [
         {
           "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         },
         {
@@ -57,6 +65,10 @@
           "options": {}
         },
         {
+          "name": "@babel/plugin-proposal-export-default-from",
+          "options": {}
+        },
+        {
           "name": "@babel/plugin-proposal-do-expressions",
           "options": {}
         },
@@ -79,6 +91,10 @@
       "plugins": [
         {
           "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         },
         {

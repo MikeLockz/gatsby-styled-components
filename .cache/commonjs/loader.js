@@ -206,7 +206,7 @@ let prefetchCompleted = {};
 let disableCorePrefetching = false;
 const queue = {
   addPagesArray: newPages => {
-    findPage = (0, _findPage.default)(newPages, __PATH_PREFIX__);
+    findPage = (0, _findPage.default)(newPages, __BASE_PATH__);
   },
   addDevRequires: devRequires => {
     syncRequires = devRequires;
@@ -397,7 +397,7 @@ const postInitialRenderWork = () => {
 
   if (process.env.NODE_ENV === `production`) {
     // We got all resources needed for first mount,
-    // we can fetch resoures for all pages.
+    // we can fetch resources for all pages.
     fetchPageResourceMap();
   }
 };

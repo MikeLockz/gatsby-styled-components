@@ -8,7 +8,7 @@ const _require$publicLoader = require(`./loader`).publicLoader,
       getResourceURLsForPathname = _require$publicLoader.getResourceURLsForPathname;
 
 exports.apiRunner = (api, args = {}, defaultReturn, argTransform) => {
-  // Hooks for cypress-gatsby's API handler
+  // Hooks for gatsby-cypress's API handler
   if (process.env.CYPRESS_SUPPORT) {
     if (window.___apiHandler) {
       window.___apiHandler(api);

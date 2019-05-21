@@ -3,13 +3,16 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/work/development/gatsby-starter-styled-components/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
+      options: {"plugins":[],"name":"rimble-storefront","short_name":"rimble","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png"},
     },{
       plugin: require('/Users/work/development/gatsby-starter-styled-components/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       plugin: require('/Users/work/development/gatsby-starter-styled-components/node_modules/gatsby-mdx/gatsby-ssr'),
       options: {"plugins":[],"defaultLayouts":{"default":"/Users/work/development/gatsby-starter-styled-components/src/templates/docs.js"},"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1035,"sizeByPixelDensity":true}}]},
+    },{
+      plugin: require('/Users/work/development/gatsby-starter-styled-components/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
     },{
       plugin: require('/Users/work/development/gatsby-starter-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
