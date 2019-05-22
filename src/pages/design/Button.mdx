@@ -2,6 +2,10 @@
 title: Button
 ---
 
+import ContributeBanner from "../../components/documentation/ContributeBanner";
+import ExampeCard from "../../components/documentation/ExampleCard";
+import { Button, Box, Flex } from "rimble-ui";
+
 # Button design guidelines
 
 Button components let users know they can perform an action, like connecting their Ethereum account or starting a transaction.
@@ -10,19 +14,28 @@ Button components let users know they can perform an action, like connecting the
 
 # Design
 
-Some best practices for using `Button` in your product.
+Some best practices for using Button in your product.
 
 ### Don't just use icons
 
-Do
-
-Send Ether
-
-Don't
+<Flex>
+  <Box width={[1, 1 / 2]} my={3} mr={3}>
+    <ExampleCard variant={"positive"}>
+      <Button icon="Send" mb="3">
+        Send Ether
+      </Button>
+    </ExampleCard>
+  </Box>
+  <Box width={[1, 1 / 2]} my={3}>
+    <ExampleCard variant={"negative"}>
+      <Button icon="Send" mb="3" />
+    </ExampleCard>
+  </Box>
+</Flex>
 
 ### Don’t use buttons for navigational links
 
-Buttons are for action-based tasks. Use `Button.Text` instead.
+Buttons are for action-based tasks. Use Button.Text instead.
 
 Do
 
@@ -36,11 +49,69 @@ Transaction history
 
 This will let users know where to look when they want to perform actions
 
-#
+### Consider visual hierarchy of buttons
 
-Testing
-!
+Don’t use too many buttons together on one piece of interface: prioritise the most important action. Use Button.Text and Button.Outline to give your actions visual hierarchy
 
-!
+# What's a transaction fee?
 
-# aok
+Every blockchain action requires a fee. This pays for someone in the network to update the blockchain. It doesn’t go to us. Be sure to save some ETH aside for fees.
+
+Cancel
+
+PreviousNext
+
+# Content
+
+Some best practices for writing Button microcopy.
+
+### Keep copy concise
+
+Don’t use articles (a, the, an) in button microcopy. This will make your button quicker to scan and shorter.
+
+Do
+
+Add wallet
+
+Don't
+
+Add a wallet
+
+### Explain the next step, not the end goal
+
+The user should understand exactly what will happen once they press the button.
+
+For example, if you have a button that launches a QR code for you to scan with your mobile...
+
+Do
+
+Show QR code
+
+Don't
+
+Scan QR code
+
+### Lead with a verb and follow with a noun
+
+Don’t rely on the rest of the interface to inform the user about what their action relates to.
+
+Do
+
+Add wallet
+
+Send Ether
+
+Don't
+
+Add
+
+Send
+
+Universally understood actions like "Save", "Next" and "Previous" etc may not need the noun.
+
+<ContributeBanner />
+
+### Related components
+
+- [MetaMaskButton](https://consensys.github.io/rimble-ui/?path=/story/components-metamaskbutton--documentation) – a ready-styled button to tell your users that they can connect with MetaMask
+- [UPortButton](https://consensys.github.io/rimble-ui/?path=/story/components-uportbutton--documentation) – a ready-styled button ready to tell your users that they can connect with uPort
