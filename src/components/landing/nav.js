@@ -8,6 +8,8 @@ import NavMenu from "./navMenu";
 import Heading from "./Heading";
 import defaultTheme from "../../theme";
 
+import RimbleGatsbyLink from "./RimbleGatsbyLink";
+
 const NavWrap = styled.nav`
   position: fixed;
   z-index: 9999;
@@ -46,8 +48,10 @@ const Nav = () => (
     <Container>
       <NavList display="flex" flex="row nowrap">
         <li>
-          <Heading.h1 fontSize={[2, 3]} fontWeight={2} color={"mid-gray"}>
-            Rimble Design System
+          <Heading.h1 fontSize={[2, 3]} fontWeight={2}>
+            <RimbleGatsbyLink to="/" title="Rimble home" color={"mid-gray"}>
+              Rimble Design System
+            </RimbleGatsbyLink>
           </Heading.h1>
         </li>
         <NavMenu theme={defaultTheme} />
