@@ -3,6 +3,7 @@ import Heading from "../heading";
 import Code from "./code";
 import { P } from "./p";
 import { Table } from "./table";
+import Link from "./link";
 
 /* eslint-disable react/display-name */
 const mdxComponents = {
@@ -38,8 +39,8 @@ const mdxComponents = {
   code: props => <Code is="block" {...props} />,
   p: P,
   inlineCode: Code,
-  table: props => <Table {...props} />
-  // TODO add `a`
+  table: props => <Table {...props} />,
+  a: props => <Link {...props} />
   // TODO add `img`
   // TODO add `blockquote`
   // TODO add `ul`

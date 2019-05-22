@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import { graphql, StaticQuery } from "gatsby";
 import ContributeBanner from "../components/documentation/ContributeBanner";
 import Layout from "../components/layout";
-import { Link } from "gatsby";
 
 // force top-level navigation to be a certain order
 //const forcedNavOrder = ["/getting-started", "/guides"];

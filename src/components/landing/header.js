@@ -1,6 +1,5 @@
 import React from "react";
-//import { Layout, Link } from "$components";
-import { Link } from "gatsby";
+import RimbleGatsbyLink from "./RimbleGatsbyLink";
 
 import Text from "./Text";
 import Heading from "./Heading";
@@ -15,15 +14,15 @@ const Header = ({ props }) => (
       Adaptable components and design standards for decentralized applications.
     </Text.p>
 
-    <Link to={"design"}>
+    <RimbleGatsbyLink to={"design"}>
       <Button width={["100%", "auto"]} mr={[0, 3]} mb={[3, 0]}>
         Design
       </Button>
-    </Link>
+    </RimbleGatsbyLink>
 
-    <Link to={"develop"}>
+    <RimbleGatsbyLink to={"develop"}>
       <Button.outline width={["100%", "auto"]}>Develop</Button.outline>
-    </Link>
+    </RimbleGatsbyLink>
   </header>
 );
 
