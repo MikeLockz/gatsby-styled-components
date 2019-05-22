@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Box } from "rimble-ui";
 
 import Item from "./item";
 import getActiveItem from "./get-active-item";
@@ -215,22 +216,24 @@ class SidebarBody extends Component {
           }}
           ref={this.scrollRef}
         >
-          <ul style={{ listStyle: "none" }}>
-            {itemList.map((item, index) => (
-              <Item
-                activeItemLink={activeItemLink}
-                activeItemParents={activeItemParents}
-                isActive={openSectionHash[item.title]}
-                item={item}
-                key={index}
-                level={0}
-                location={location}
-                onLinkClick={closeSidebar}
-                onSectionTitleClick={this._toggleSection}
-                openSectionHash={openSectionHash}
-              />
-            ))}
-          </ul>
+          <Box m={3}>
+            <ul style={{ listStyle: "none", margin: "0", padding: "0" }}>
+              {itemList.map((item, index) => (
+                <Item
+                  activeItemLink={activeItemLink}
+                  activeItemParents={activeItemParents}
+                  isActive={openSectionHash[item.title]}
+                  item={item}
+                  key={index}
+                  level={0}
+                  location={location}
+                  onLinkClick={closeSidebar}
+                  onSectionTitleClick={this._toggleSection}
+                  openSectionHash={openSectionHash}
+                />
+              ))}
+            </ul>
+          </Box>
         </nav>
       </section>
     );

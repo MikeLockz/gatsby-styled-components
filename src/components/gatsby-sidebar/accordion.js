@@ -103,7 +103,10 @@ class Accordion extends React.Component {
           onSectionTitleClick={onSectionTitleClick}
           uid={uid}
         />
-        <ul id={uid} style={{ listStyle: "none" }}>
+        <ul
+          id={uid}
+          style={{ listStyle: "none", margin: "0 0 0 1em", padding: "0" }}
+        >
           {item.items.map(subitem => (
             <Item
               activeItemLink={activeItemLink}
