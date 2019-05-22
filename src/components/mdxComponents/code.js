@@ -28,7 +28,9 @@ class Code extends React.Component {
     showCode: false
   };
 
-  toggleShowCode = () => {
+  toggleShowCode = e => {
+    e.preventDefault();
+
     this.setState({ showCode: !this.state.showCode });
   };
 
@@ -97,8 +99,9 @@ class Code extends React.Component {
               href="#"
               title="Show code"
               onClick={this.toggleShowCode}
+              style={{ color: defaultTheme.colors.blacks[7] }}
             >
-              Edit Code
+              {this.state.showCode ? `Hide Code` : `Edit Code`}
             </RimbleLink>
           </ThemeProvider>
 

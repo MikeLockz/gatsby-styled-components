@@ -12,7 +12,7 @@ const Link = styled.a`
   ${fontWeight}
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline
   }
 `;
 
