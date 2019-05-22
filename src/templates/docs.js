@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql, StaticQuery } from "gatsby";
-import { Edit3 } from "react-feather";
+import ContributeBanner from "../components/documentation/ContributeBanner";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 
@@ -97,11 +97,7 @@ const DocLayout = ({ children, ...props }) =>
           <Layout {...props} itemList={itemList}>
             <Helmet />
             {children}
-            <div>
-              <Link to={`${site.siteMetadata.docsLocation}`} target="_blank">
-                <Edit3 size={16} /> edit this page on GitHub
-              </Link>
-            </div>
+            <ContributeBanner />
           </Layout>
         );
       }}

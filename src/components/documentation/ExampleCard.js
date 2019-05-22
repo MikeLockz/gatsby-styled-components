@@ -22,12 +22,17 @@ const ExampleCard = ({ variant, ...props }) => {
   }
 
   return (
-    <Box bg={"blacks.0"} borderTop={`4px solid HSLA(${colorPrimary}, 1.00)`}>
+    <Box
+      bg={"blacks.0"}
+      borderTop={`4px solid HSLA(${colorPrimary}, 1.00)`}
+      height={"100%"}
+    >
       <Box
         border={1}
         borderColor={"blacks.3"}
         borderWidth={"0 1px 1px 1px"}
         p={4}
+        height={"100%"}
       >
         <Flex alignItems={"center"} mb={4}>
           <Box
